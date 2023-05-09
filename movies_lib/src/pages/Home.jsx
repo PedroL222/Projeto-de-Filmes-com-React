@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
+import "./MovieGrid.css";
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -17,7 +18,7 @@ const Home = () =>{
 
     useEffect(()=>{
 
-        const topRatedUrl = `${moviesURL}api_key=${apiKey}&append_to_response=videos,images`;
+        const topRatedUrl = `${moviesURL}/popular?api_key=${apiKey}&append_to_response=videos,images`;
 
         getTopRatedMovies(topRatedUrl);
         console.log(topRatedUrl)
