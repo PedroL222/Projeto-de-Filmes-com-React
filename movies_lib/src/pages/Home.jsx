@@ -21,7 +21,6 @@ const Home = () =>{
         const topRatedUrl = `${moviesURL}/popular?api_key=${apiKey}&append_to_response=videos,images`;
 
         getTopRatedMovies(topRatedUrl);
-        console.log(topRatedUrl)
     },[])
 
     return <>
@@ -29,7 +28,6 @@ const Home = () =>{
             <h2 className="title">Melhores Filmes:</h2>
             <div className="movies_container">
                 {topMovies.length === 0 &&<p>Carregando...</p>}
-                {console.log(topMovies)}
                 {topMovies && topMovies.map((movie)=>
             (<MovieCard key={movie.id} movie={movie} />)
         )}
