@@ -2,7 +2,7 @@
   "name": "movies_lib",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{PedroL222}.github.io/{nome-do-repositorio}",
+  "homepage": "https://PedroL222.github.io/Projeto-de-Filmes-com-React",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
